@@ -13,8 +13,17 @@
 
 <body>
     <main>
+        <div class="app-grid">
+            
+        </div>
+        <div class="selecao">
+            <input type="text">
+            <div class="itens">
+                <div class="item-card"></div>
+            </div>
+        </div>
         <div class="preview-container">
-            <div class="tabloide">
+            <div class="tabloide-frente">
 
                 <div class="capa">
                     <img src="/assets/wallpaper.jpg" alt="Capa do tabloide" />
@@ -26,10 +35,6 @@
 
                 <!-- ÍCONES decorativos (absolutos) -->
                 <div class="icone1"><img src="/assets/Zecão.png" alt="Zecão" /></div>
-                <div class="icone2"><img src="/assets/Dinheiro.png" alt="Dinheiro 1" /></div>
-                <div class="icone3"><img src="/assets/Dinheiro.png" alt="Dinheiro 2" /></div>
-                <div class="icone4"><img src="/assets/esquerda.png" alt="Esquerda" /></div>
-                <div class="icone5"><img src="/assets/direita.png" alt="Direita" /></div>
                 <!-- GRID DE PRODUTOS -->
                 <div class="produtos">
                     <!-- Copie/repita cards conforme necessário -->
@@ -186,21 +191,34 @@
 
                 <footer class="rodape" role="contentinfo" aria-label="Rodapé do tabloide">
                     <div class="rodape-inner">
-                        <div class="rodape-col rodape-col-1">
-                            <img src="/assets/Carflax.png" alt="Logo da loja" class="rodape-logo" />
-                            <p class="slogan">O Soberano em Hidráulica e Elétrica</p>
+                        <div class="rodape-col rodape-col-4">
+                            <div class="qrcode-wrap" aria-hidden="false">
+                                <img src="/assets/Qrcode.jpg" alt="QR catálogo" class="qr" />
+                                <p class="qr-text"><img src="/assets/whatsapp.svg" alt="">WhatsApp</p>
+                            </div>
                         </div>
 
                         <div class="rodape-col rodape-col-2">
-                            <p class="loja-nome">Carflax</p>
-                            <p>Av Américo Bruno, 75 Ponte São João — Jundiai / SP</p>
-                            <p>Tel: (11) 94947-0025 • WhatsApp: (11) 94947-0025</p>
+                            <p class="loja-nome">Carflax Hidráulica e Elétrica</p>
+                            <p>Av Américo Bruno, 75 Ponte São João, Jundiaí / SP</p>
+                            <p>WhatsApp: (11) 94947-0025</p>
+                        </div>
+
+                        <div class="rodape-col rodape-col-1">
+                            <!-- Espaço para logo / selo / destaque -->
+                            <div class="quadrado" role="img" aria-label="Logo / destaque"></div>
                         </div>
 
                         <div class="rodape-col rodape-col-3">
                             <div class="formas-pgto">
-                                <p class="tit">Formas de pagamento</p>
+
                                 <img src="/assets/pagamentos.png" alt="Formas de pagamento" class="pagamentos" />
+                                <p class="tit">Formas de pagamento</p>
+
+                            </div>
+
+                            <div class="formas-de-pagamento">
+                                <p>Dinheiro, PIX, Cartão de Crédito 1x</p>
                             </div>
 
                             <div class="redes">
@@ -208,25 +226,15 @@
                                 <div class="socials">
                                     <a href="https://www.instagram.com/sua-loja" target="_blank"
                                         rel="noopener noreferrer" aria-label="Instagram">
-                                        <img src="/assets/ig.svg" alt="Instagram" class="social-ico" />
+                                        <img src="/assets/instagram.png" alt="Instagram" class="social-ico" />
+                                        <p>@carflax.jundiai</p>
                                     </a>
                                     <a href="https://www.facebook.com/sua-loja" target="_blank"
                                         rel="noopener noreferrer" aria-label="Facebook">
-                                        <img src="/assets/fb.svg" alt="Facebook" class="social-ico" />
-                                    </a>
-                                    <a href="https://www.tiktok.com/@sua-loja" target="_blank" rel="noopener noreferrer"
-                                        aria-label="TikTok">
-                                        <img src="/assets/tt.svg" alt="TikTok" class="social-ico" />
+                                        <img src="/assets/facebook.png" alt="Facebook" class="social-ico" />
+                                        <p>/carflaxjundiai</p>
                                     </a>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="rodape-col rodape-col-4">
-                            <div class="qrcode-wrap" aria-hidden="false">
-                                <!-- substitua qr.png por QR gerado com link pra catálogo/loja -->
-                                <img src="https://pngimg.com/d/qr_code_PNG33.png" alt="QR catálogo" class="qr" />
-                                <p class="qr-text">Catálogo digital</p>
                             </div>
                         </div>
                     </div>
@@ -237,8 +245,259 @@
                     </div>
                 </footer>
 
-            </div> <!-- .tabloide -->
-        </div> <!-- .preview-container -->
+
+            </div>
+            <div class="tabloide-verso">
+                <!-- GRID DE PRODUTOS -->
+                <div class="produtos">
+                    <!-- Copie/repita cards conforme necessário -->
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div>
+                                    <span class="valor">190</span>
+                                    <span class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- exemplo outros cards -->
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="produto"><img src="/assets/exemplo.webp" alt="" /></div>
+                        <div class="infos">
+                            <div class="fornecedor"><img src="/assets/amanco.svg" alt="" /></div>
+                            <div class="titulo">
+                                <p>CABO FLEX 750V 2,5MM VM CORFIO (ROLO 100MT)</p>
+                            </div>
+                            <div class="codigo">
+                                <p>Cód: 123456</p>
+                            </div>
+                            <div class="preco">
+                                <div class="valor-box">
+                                    <div class="moeda">R$</div><span class="valor">199</span><span
+                                        class="centavos">,90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- FIM DO GRID DE PRODUTOS -->
+
+                <footer class="rodape" role="contentinfo" aria-label="Rodapé do tabloide">
+                    <div class="rodape-inner">
+                        <div class="rodape-col rodape-col-4">
+                            <div class="qrcode-wrap" aria-hidden="false">
+                                <img src="/assets/Qrcode.jpg" alt="QR catálogo" class="qr" />
+                                <p class="qr-text"><img src="/assets/whatsapp.svg" alt="">WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <div class="rodape-col rodape-col-2">
+                            <p class="loja-nome">Carflax Hidráulica e Elétrica</p>
+                            <p>Av Américo Bruno, 75 Ponte São João, Jundiaí / SP</p>
+                            <p>WhatsApp: (11) 94947-0025</p>
+                        </div>
+
+                        <div class="rodape-col rodape-col-1">
+                            <!-- Espaço para logo / selo / destaque -->
+                            <div class="quadrado" role="img" aria-label="Logo / destaque"></div>
+                        </div>
+
+                        <div class="rodape-col rodape-col-3">
+                            <div class="formas-pgto">
+
+                                <img src="/assets/pagamentos.png" alt="Formas de pagamento" class="pagamentos" />
+                                <p class="tit">Formas de pagamento</p>
+
+                            </div>
+
+                            <div class="formas-de-pagamento">
+                                <p>Dinheiro, PIX, Cartão de Crédito 1x</p>
+                            </div>
+
+                            <div class="redes">
+                                <p class="tit">Siga-nos</p>
+                                <div class="socials">
+                                    <a href="https://www.instagram.com/sua-loja" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Instagram">
+                                        <img src="/assets/instagram.png" alt="Instagram" class="social-ico" />
+                                        <p>@carflax.jundiai</p>
+                                    </a>
+                                    <a href="https://www.facebook.com/sua-loja" target="_blank"
+                                        rel="noopener noreferrer" aria-label="Facebook">
+                                        <img src="/assets/facebook.png" alt="Facebook" class="social-ico" />
+                                        <p>/carflaxjundiai</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rodape-bottom">
+                        <p class="legenda">Ofertas válidas de 03/11/2025 a 20/11/2025 ou enquanto durar o estoque.</p>
+                        <p class="legal">Carflax Hidráulica e Elétrica — CNPJ 56.913.445/0001-17</p>
+                    </div>
+                </footer>
+
+
+            </div>
+        </div>
+        
     </main>
 </body>
 
